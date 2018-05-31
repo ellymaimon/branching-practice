@@ -15,3 +15,7 @@
 #turtle, #cat, #komodo {
   display: none;
 }
+
+.highlight {
+  background-color: lightyellow;
+}

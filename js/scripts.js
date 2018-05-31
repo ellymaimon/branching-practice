@@ -26,4 +26,20 @@ $("#animal").change(function() {
       ;
     }
   });
+
+  // amusement rides
+  var height = parseInt(prompt("How tall are you in feet? (Please round)"));
+
+  if(height >= 10) {
+    $("#rollercoaster, #scrambler").addClass("highlight");
+  } else if(height > 4) {
+    $("#rollercoaster").addClass("highlight");
+  }
+  if(height >= 3 && height <= 7) {
+    $("#ferris-wheel").addClass("highlight");
+  }
+  if(height < 7) {
+    $("#bumper-carts").addClass("highlight");
+  }
+
 });
